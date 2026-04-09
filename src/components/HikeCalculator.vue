@@ -135,9 +135,9 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 
-const currentSalary = ref<number | null>(null)
-const hikePercentage = ref<number | null>(null)
-const targetSalary = ref<number | null>(null)
+const currentSalary = ref<number | string | null>(null)
+const hikePercentage = ref<number | string | null>(null)
+const targetSalary = ref<number | string | null>(null)
 
 const resetForm = () => {
   currentSalary.value = null
