@@ -7,6 +7,10 @@ import Vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/hike_calculator/',
+  build: {
+    outDir: 'dist',
+  },
   plugins: [
     tailwindcss(),
     Vue({
